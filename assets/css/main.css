@@ -215,7 +215,7 @@ input, select, textarea {
 
 	.container {
 		margin: 0 auto;
-		max-width: 100%;
+		max-width: 67%;
 		width: 1400px;
 	}
 
@@ -2014,6 +2014,11 @@ button:active,
   font-size: 1em;
   margin: 0;
 }
+
+
+
+
+
 
 /* Icons */
 

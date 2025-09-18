@@ -22,7 +22,7 @@
 						<div id="logo">
 							<span class="image avatar48"><img src="images/tianqing_head.jpeg" alt="" /></span>
 							<h1 id="title">Tianqing Zhang </h1>
-							<p>Observational Cosmologist</p>
+							<p style="text-align: right;">Observational Cosmologist</p>
 						</div>
 
 					<!-- Nav -->
@@ -42,6 +42,8 @@
 					<!-- Social Icons -->
 						<ul class="icons">
 							<li><a href="https://github.com/ztq1996" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.instagram.com/zhang_tianqing/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/tianqing-zhang/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
 						</ul>
 
 				</div>
@@ -55,17 +57,61 @@
 					<section id="top" class="one dark cover">
 						<div class="container">
 
-							<header>
-								<h2 class="alt"><strong>Tianqing Zhang</strong>
-							</header>
-							<p></p>
 
-							<footer>
-								<a href="data/cv_jul_2025.pdf" class="button scrolly">My CV</a>
-							</footer>
-							<footer>
-								<a href="https://ui.adsabs.harvard.edu/search/q=docs(library%2Fe-oFFVJMSqifbMoeN_iXSw)" class="button scrolly">Publication List</a>
-							</footer>
+<style>
+    /* Scoped header styles */
+    .profile-header h2 {
+        display: inline-block;
+        position: relative;
+        font-weight: 600;
+        font-size: 2em;
+        padding: 0.5em 0;
+    }
+
+    .profile-header::after {
+        content: "";
+        display: block;
+        width: 100%;                 /* full width underline */
+        height: 2px;
+        background-color: #fdfdfd;   /* pearl white */
+        margin-top: 40px;
+        border-radius: 2px;
+    }
+
+    /* Scoped button group */
+    .profile-buttons {
+        display: flex;
+        justify-content: center; /* center horizontally */
+        gap: 2em;               /* space between buttons */
+        margin-top: 3.0em;
+    }
+
+    .profile-buttons .button {
+        display: inline-block;
+        padding: 0.6em 1.2em;
+        background: rgba(256, 256, 256, 0.1);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 0.95em;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .profile-buttons .button:hover {
+        background: rgba(256, 256, 256, 0.3); /* semi-transparent hover */
+        transform: translateY(-2px);
+    }
+</style>
+
+<div class="profile-header">
+    <h2><strong>Tianqing Zhang</strong></h2>
+</div>
+
+<div class="profile-buttons">
+    <a href="data/cv_jul_2025.pdf" class="button scrolly">My CV</a>
+    <a href="https://ui.adsabs.harvard.edu/search/q=docs(library%2Fe-oFFVJMSqifbMoeN_iXSw)" class="button scrolly">Publication List</a>
+</div>
 
 						</div>
 					</section>
@@ -82,15 +128,15 @@
 							<div class="row">
 								<div class="col-9 col-12-mobile">
 									<!-- <p>  -->
-									I am an observational cosmologist. I use large extragalactic datasets from the Subaru Telescope, Rubin
-									Observatory, and Nancy Grace Roman Space Telescope
+									I am an observational cosmologist. I use large extragalactic datasets from the Rubin
+									Observatory, Hyper-Suprime Cam of the Subaru Telescope and Nancy Grace Roman Space Telescope
 									to study the structure of the universe, nature of dark matter and dark energy. I use techniques such as the weak gravitational lensing and galaxy clustering, etc. I particularly study observational systematics that can impact these analysis, such as the Point Spread Function (PSF) and the photometric redshift (photo-z). <br> <br>
 
 									I am Research Assistant Professor at University of Pittsburgh and a LINCC Frameworks research scientist. Previously, I was a graduate student at McWilliams Center for Cosmology, Carnegie Mellon University. I did my undergrad at Duke University and Shanghai Jiao Tong University. I have been passionate about Astronomy since 15. <br> <br>
 
 									I am based in Pittsburgh, PA. Sometimes I show up in the Bay Area, California. <br> <br>
 
-									Outside of research, I like to hike, build Astronomy community, and play low-intensity basketball...  <br>
+									Outside of research, I like to hike, build Astronomy community, and play basketball.  <br>
 									 <!-- </p> -->
 									
 								</div>
@@ -137,13 +183,13 @@
 										<header>
 											<h3 style="font-weight: bold;">Point Spread Function (PSF)</h3>
 
-												I study how the atmospheric turbulence and optical effect, normal described as the Point Spread Function (PSF), impact weak lensing measurement. Especially, I study how higher moments of the PSF impact the shear estimation. <br> <br>
+												I study how the atmospheric turbulence and optical effect, normal described as the Point Spread Function (PSF), impact weak lensing measurement. Especially, I study how higher moments of the PSF impact the shear estimation. <br> 
 
 												<a href="https://arxiv.org/abs/2107.05644" target="_blank">[Paper I]</a>
 												
 												<a href="https://arxiv.org/abs/2205.07892" target="_blank">[Paper II]</a>
 
-												<a href="https://arxiv.org/abs/2212.03257" target="_blank">[Paper III]</a>  <br> <br>
+												<a href="https://arxiv.org/abs/2212.03257" target="_blank">[Paper III]</a>  <br> 
 
 												My higher moments measurement algorithm is also implemented as part of the <a href="https://github.com/lsst/meas_extensions_shapeHSM" target="_blank">Rubin Science Pipeline</a>.
 
@@ -158,7 +204,7 @@
 										<a class="image fit"><img src="images/distribution.png" alt="" /></a>
 										<header>
 											<h3 style="font-weight: bold;">RAIL</h3> 
-											I lead the development of <a href="https://github.com/LSSTDESC/rail" target="_blank">Redshift Infrastructure Assessment Layers (RAIL)</a>, which is a open-source software package for estimating photometric redshift and supporting photometric redshift research. 
+											I am a team co-lead of <a href="https://github.com/LSSTDESC/rail" target="_blank">Redshift Infrastructure Assessment Layers (RAIL)</a>, which is a open-source software package for estimating photometric redshift and supporting photometric redshift research. <br>
 
 											<a href="https://arxiv.org/abs/2505.02928" target="_blank">[RAIL v1.0 Paper]</a>
 
@@ -225,7 +271,9 @@
 								<h2>Contact</h2>
 							</header>
 
-							<p>Email: <a href="mailto:tq96zhang@gmail.com">tq96zhang@gmail.com</a></p>
+<p style="text-align: center;">
+  Email: <a href="mailto:tq96zhang@gmail.com">tq96zhang@gmail.com</a>
+</p>
 <!-- 
 							<form method="post" action="#">
 								<div class="row">
