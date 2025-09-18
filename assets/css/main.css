@@ -212,6 +212,7 @@ input, select, textarea {
 
 /* Container */
 
+
 	.container {
 		margin: 0 auto;
 		max-width: 100%;
@@ -260,6 +261,17 @@ input, select, textarea {
 
 /* Row */
 
+.col-9.col-12-mobile {
+  font-size: 1.3rem;    /* slightly smaller than normal */
+  line-height: 1.6;     /* extra spacing for readability */
+  text-align: left;        /* keep it left aligned */
+  margin: 0 auto;          /* center the whole block in its parent */
+  padding-left: 2rem;      /* push text inward from the left edge */
+  padding-right: 2rem;     /* optional, for balance */
+}
+p {
+  text-align: left;
+}
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -1976,21 +1988,32 @@ button:active,
 
 /* Item */
 
-	.item {
-		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
-		margin-bottom: 40px;
-	}
+.item {
+  background: #fff;
+  border-radius: 12px;                       /* rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* floating shadow */
+  margin-bottom: 40px;
+  transition: transform 0.25s ease, 
+              box-shadow 0.25s ease;         /* smooth hover effect */
+}
 
-		.item header {
-			background: #fff;
-			margin: 0;
-			padding: 1em 0 1em 0;
-			font-size: 0.8em;
-		}
+.item:hover {
+  transform: translateY(-6px);               /* lift upward */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25); /* stronger hover shadow */
+}
 
-			.item header h3 {
-				font-size: 1em;
-			}
+.item header {
+  background: #fff;
+  margin: 0;
+  padding: 1em;
+  font-size: 0.8em;
+  border-radius: 12px 12px 0 0;              /* match card corners */
+}
+
+.item header h3 {
+  font-size: 1em;
+  margin: 0;
+}
 
 /* Icons */
 
