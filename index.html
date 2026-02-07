@@ -60,13 +60,13 @@
 
 <style>
     /* Scoped header styles */
-    .profile-header h2 {
-        display: inline-block;
-        position: relative;
-        font-weight: 600;
-        font-size: 2em;
-        padding: 0.5em 0;
-    }
+	.profile-header h2 {
+		display: inline-block;
+		position: relative;
+		font-weight: 600;
+		font-size: 2.5em;
+		padding: 0.5em 0;
+	}
 
     .profile-header::after {
         content: "";
@@ -86,17 +86,17 @@
         margin-top: 3.0em;
     }
 
-    .profile-buttons .button {
-        display: inline-block;
-        padding: 0.6em 1.2em;
-        background: rgba(256, 256, 256, 0.1);
-        color: white;
-        border: none;
-        border-radius: 6px;
-        font-size: 0.95em;
-        text-decoration: none;
-        transition: background 0.3s ease, transform 0.2s ease;
-    }
+	.profile-buttons .button {
+		display: inline-block;
+		padding: 0.6em 1.2em;
+		background: rgba(256, 256, 256, 0.1);
+		color: white;
+		border: none;
+		border-radius: 6px;
+		font-size: inherit;
+		text-decoration: none;
+		transition: background 0.3s ease, transform 0.2s ease;
+	}
 
     .profile-buttons .button:hover {
         background: rgba(256, 256, 256, 0.3); /* semi-transparent hover */
@@ -109,7 +109,7 @@
 </div>
 
 <div class="profile-buttons">
-    <a href="data/cv_jul_2025.pdf" class="button scrolly">My CV</a>
+	<a href="data/CV_feb_2026.pdf" class="button scrolly" download>My CV</a>
     <a href="https://ui.adsabs.harvard.edu/search/q=docs(library%2Fe-oFFVJMSqifbMoeN_iXSw)" class="button scrolly">Publication List</a>
 </div>
 
@@ -126,21 +126,30 @@
 						<div class="container">
 
 							<div class="row">
-								<div class="col-9 col-12-mobile">
+								<div class="col-8 col-12-mobile">
 									<!-- <p>  -->
-									I am an observational cosmologist. I use large extragalactic datasets from the Rubin
-									Observatory, Hyper-Suprime Cam of the Subaru Telescope and Nancy Grace Roman Space Telescope
-									to study the structure of the universe, nature of dark matter and dark energy. I use techniques such as the weak gravitational lensing and galaxy clustering, etc. I particularly study observational systematics that can impact these analysis, such as the Point Spread Function (PSF) and the photometric redshift (photo-z). <br> <br>
+									I am an observational cosmologist who works with large extragalactic datasets from the Rubin
+									Observatory, the Hyper Suprime-Cam on the Subaru Telescope, and the Nancy Grace Roman Space Telescope
+									to study the large-scale structure of the Universe and the nature of dark matter and dark energy. My
+									research employs techniques such as weak gravitational lensing and galaxy clustering, and focuses on
+									observational systematics that can bias these analyses, including the Point Spread Function (PSF) and
+									photometric redshift (photo-z) estimation.<br> <br>
 
-									I am Research Assistant Professor at University of Pittsburgh and a LINCC Frameworks research scientist. Previously, I was a graduate student at McWilliams Center for Cosmology, Carnegie Mellon University. I did my undergrad at Duke University and Shanghai Jiao Tong University. I have been passionate about Astronomy since 15. <br> <br>
 
-									I am based in Pittsburgh, PA. Sometimes I show up in the Bay Area, California. <br> <br>
+									I am a Research Assistant Professor at the University of Pittsburgh and a LINCC Frameworks Research
+									Scientist. I received a Ph.D. in Physics from Carnegie Mellon University. I completed my undergraduate
+									studies at Duke University and Shanghai Jiao Tong University. I have been passionate about astronomy since I was 15.<br> <br>
+									
+									I develop and adapt Machine Learning techniques for photometric redshift estimation and feature
+									extraction. In 2018, I have contributed to Natural Language Processing at IBM.<br> <br>
 
-									Outside of research, I like to hike, build Astronomy community, and play basketball.  <br>
+									I am based in Pittsburgh, PA, and occasionally visit the Bay Area in California.<br> <br>
+
+									Outside of research, I enjoy hiking, community-building in astronomy, and playing basketball.<br>
 									 <!-- </p> -->
 									
 								</div>
-								<div class="col-3 col-12-mobile">
+								<div class="col-4 col-12-mobile">
 									<article class="icons">
 										<a class="image fit"><img src="images/tannoudji.jpeg" alt="" /></a>
 										<header>
@@ -179,19 +188,19 @@
 							<div class="row">
 								<div class="col-6 col-12-mobile">
 									<article class="item">
+										<header>
+											<h3>Point Spread Function (PSF)</h3>
+										</header>
 										<a class="image fit"><img src="images/psf_sq.gif" alt="" /></a>
 										<header>
-											<h3 style="font-weight: bold;">Point Spread Function (PSF)</h3>
 
-												I study how the atmospheric turbulence and optical effect, normal described as the Point Spread Function (PSF), impact weak lensing measurement. Especially, I study how higher moments of the PSF impact the shear estimation. <br> 
+											I study how atmospheric turbulence and optical effects—described as the Point Spread Function (PSF)—impact weak lensing measurements, with particular focus on higher moments and their effects on shear estimation. <br><br>
 
-												<a href="https://arxiv.org/abs/2107.05644" target="_blank">[Paper I]</a>
-												
-												<a href="https://arxiv.org/abs/2205.07892" target="_blank">[Paper II]</a>
+											<a href="https://arxiv.org/abs/2107.05644" target="_blank">PSF higher moments pathfinding (2022)</a><br>
+											<a href="https://arxiv.org/abs/2205.07892" target="_blank">Comprehensive PSF higher moments study (2023)</a><br>
+											<a href="https://arxiv.org/abs/2212.03257" target="_blank">PSF systematics mitigation techniques (2023)</a><br> 
 
-												<a href="https://arxiv.org/abs/2212.03257" target="_blank">[Paper III]</a>  <br> 
-
-												My higher moments measurement algorithm is also implemented as part of the <a href="https://github.com/lsst/meas_extensions_shapeHSM" target="_blank">Rubin Science Pipeline</a>.
+												My PSF higher moments measurement algorithm is implemented in the <a href="https://github.com/lsst/meas_extensions_shapeHSM" target="_blank">Rubin Science Pipeline</a>.
 
 
 											
@@ -201,56 +210,78 @@
 
 									</article>
 									<article class="item">
-										<a class="image fit"><img src="images/distribution.png" alt="" /></a>
 										<header>
-											<h3 style="font-weight: bold;">RAIL</h3> 
-											I am a team co-lead of <a href="https://github.com/LSSTDESC/rail" target="_blank">Redshift Infrastructure Assessment Layers (RAIL)</a>, which is a open-source software package for estimating photometric redshift and supporting photometric redshift research. <br>
+											<h3>Photometric Redshift with RAIL</h3>
+										</header>
+										<a class="image fit"><img src="images/dp1_photoz.png" alt="" /></a>
+										<header>
+										I co-lead <a href="https://github.com/LSSTDESC/rail" target="_blank">Redshift Assessment Infrastructure Layers (RAIL)</a>, an open-source software platform for photometric redshift estimation and research. <br><br>
 
-											<a href="https://arxiv.org/abs/2505.02928" target="_blank">[RAIL v1.0 Paper]</a>
+										<a href="https://arxiv.org/abs/2510.07370" target="_blank">Photo-z Estimation for Rubin Data Preview 1 (2025)</a><br>
+										<a href="https://arxiv.org/abs/2505.02928" target="_blank">RAIL v1.0: Rubin-era Photo-z Stress Testing (2025)</a><br>
+										<a href="https://arxiv.org/abs/2507.01374" target="_blank">Forecasting Photo-z Impact on LSST 3×2pt (2026)</a><br>
 
 										</header>
 									</article>
 
 									<article class="item">
+										<header>
+											<h3>Image Simulation & Roman Space Telescope</h3>
+										</header>
 										<a href="https://github.com/LSSTDESC/PSFHOME" class="image fit"><img src="images/rgb4k.png" alt="" /></a>
 										<header>
-											<h3 style="font-weight: bold;">Image Simulation</h3>
 
-												I extensively apply image simulation based on GalSim in my research. 
+										I extensively apply image simulation with GalSim in weak lensing research and contribute to Roman Space Telescope PSF and shear studies. <br><br>
 
-
+										<a href="https://arxiv.org/abs/2505.00093" target="_blank">Chromatic PSF Effects on Roman (2025)</a><br>
+										<a href="https://arxiv.org/abs/2303.08750" target="_blank">Roman Image Coaddition Analysis (2024)</a>
 										</header>
 									</article>
 
 								</div>
 								<div class="col-6 col-12-mobile">
-									</article>
 									<article class="item">
-										<a class="image fit"><img src="images/hscy3-cosmology.png" alt="" /></a>
 										<header>
-											<h3 style="font-weight: bold;">Weak Lensing Cosmology</h3>
+											<h3>Weak Lensing Cosmology with HSC Y3</h3>
+										</header>
+										<a class="image fit"><img src="images/hscy3-modeling.png" alt="" /></a>
+										<header>
 
-											I am involved in the <a href="https://hsc-release.mtk.nao.ac.jp/doc/index.php/wly3/" target="_blank">HSC Y3 weak lensing cosmology analysis</a> . I am in charge of the PSF-related null tests for the shear catalog, and is involved in the cosmic shear analysis. Later, I developed point-mass correction and redshift self-calibration model, and applied the method to the HSC Y3 <a href="https://arxiv.org/abs/2507.01377" target="_blank">2x2pt</a> and <a href="https://arxiv.org/abs/2507.01386" target="_blank">3x2pt</a> analysis. 
+										I developed point-mass correction and redshift self-calibration models to improve weak lensing cosmological constraints from HSC Y3. <br><br>
+										
+										<a href="https://arxiv.org/abs/2507.01386" target="_blank">3x2pt Cosmology with Redshift Self-Calibration (2025)</a><br>
+										<a href="https://arxiv.org/abs/2507.01377" target="_blank">2x2pt Analysis with Point-Mass Correction (2025)</a><br>
+										<a href="https://arxiv.org/abs/2304.00702" target="_blank">HSC Y3 Cosmic Shear (2025)</a><br>
+										<a href="https://hsc-release.mtk.nao.ac.jp/doc/index.php/wly3/" target="_blank">HSC Y3 Release Summary</a><br>
 										</header>
 									</article>
 									
 									<article class="item">
+										<header>
+											<h3>Data Compression & Statistical Methods</h3>
+										</header>
 										<a class="image fit"><img src="images/nz_plot.png" alt="" /></a>
 										<header>
-											<h3 style="font-weight: bold;">Bayesian Weak Lensing Inference</h3>
 
-											I developed a <a href="https://arxiv.org/abs/2206.10169" target="_blank">Bayesian weak lensing inference</a> framework to fully marginalize the uncertainty of the photometric redshift distribution of the shear catalog. 
-											
+										I develop statistical and machine learning methods for cosmological analysis, including data compression for cosmic shear and neural network approaches for image processing. <br><br>
+										<a href="https://arxiv.org/abs/2503.00156" target="_blank">Neural Posterior Estimation Image Processing (2025)</a><br>
+										<a href="https://arxiv.org/abs/2206.10169" target="_blank">Bayesian Framework for Photo-z Marginalization (2023)</a><br>
+										<a href="https://arxiv.org/abs/2010.15986" target="_blank">Data Compression & Covariance Inspection (2021)</a><br>
 										</header>
 									</article>
 
 
 									<article class="item">
+										<header>
+											<h3>Student-Led Research Projects</h3>
+										</header>
 										<a class="image fit"><img src="images/parallax.png" alt="" /></a>
 										<header>
-											<h3 style="font-weight: bold;">Cosmic Proper Motion</h3>
 
-											I work with Pitt undergrad Sean Maloney on measuring the earth movement using GAIA extragalactic catalogs.  
+										I mentor students on diverse research topics spanning PSF studies, photo-z, shear analysis, and astrometry. Selected mentored projects that resulted in publications include Roman PSF studies, coadded image PSFs, and real-space vs. harmonic-space shear consistency. <br><br>
+
+										<a href="https://arxiv.org/abs/2505.00093" target="_blank">Roman PSF Chromatic Effects (Berlfein et al., 2025)</a><br>
+										<a href="https://arxiv.org/abs/2601.10797" target="_blank">Spectroscopic Training Set Imperfection on Photo-z (Crafford et al., 2026)</a><br>
 										</header>
 									
 									</article>
